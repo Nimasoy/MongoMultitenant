@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35806.99 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoMultitenant", "MongoMultitenant\MongoMultitenant.csproj", "{99749C6E-C121-4CDF-9A98-D8F0AD78A391}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{99749C6E-C121-4CDF-9A98-D8F0AD78A391}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99749C6E-C121-4CDF-9A98-D8F0AD78A391}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99749C6E-C121-4CDF-9A98-D8F0AD78A391}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99749C6E-C121-4CDF-9A98-D8F0AD78A391}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DF037383-7322-49A3-905F-963974741D83}
+	EndGlobalSection
+EndGlobal
