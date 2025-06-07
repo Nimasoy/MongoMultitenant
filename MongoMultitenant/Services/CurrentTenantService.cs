@@ -1,7 +1,5 @@
 ﻿using MongoMultitenant.Entities;
 using MongoDB.Driver;
-using Microsoft.AspNetCore.Mvc.Routing;
-using System.Runtime.CompilerServices;
 
 namespace MongoMultitenant.Services
 {
