@@ -7,16 +7,17 @@ namespace MongoMultitenant.Services
 {
     public class CurrentTenantService : ICurrentTenantService
     {
-        private readonly IMongoCollection<Tenant> _tenantsCollection;
+        private readonly IMongoDatabase _database;
         public required string TenantId { get; set; }
         public CurrentTenantService(IMongoDatabase database)
         {
-            _tenantsCollection = database.GetCollection<Tenant>("Tenants");
+            _database = database;
         }
         
         public async Task<bool> CheckTenantAsync(string tenantId)
         {
-            var exits = await _tenantsCollection.Find(t => t.Id == tenantId).AnyAsync();
+            var tenantsCollection = _database.GetCollection<Tenant>("Tenants");
+            var exits = await tenantsCollection.Find(t => t.Id == tenantId).AnyAsync();
             if (exits)
             {
                 TenantId = tenantId;
