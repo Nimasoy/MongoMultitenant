@@ -8,7 +8,7 @@ namespace MongoMultitenant.Services
     public class CurrentTenantService : ICurrentTenantService
     {
         private readonly IMongoCollection<Tenant> _tenantsCollection;
-        public string? TenantId { get; set; }
+        public required string TenantId { get; set; }
         public CurrentTenantService(IMongoDatabase database)
         {
             _tenantsCollection = database.GetCollection<Tenant>("Tenants");

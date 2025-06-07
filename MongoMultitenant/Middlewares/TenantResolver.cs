@@ -25,7 +25,7 @@ namespace MongoMultitenant.Middlewares
                 await context.Response.WriteAsync("Invalid Tenant ID.");
                 return;
             }
-
+            currentTenantService.TenantId = tenant;
             await _next(context);
         }
     }
